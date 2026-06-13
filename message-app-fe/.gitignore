@@ -1,0 +1,25 @@
+# Dependencias de pnpm
+node_modules
+.pnpm-debug.log*
+
+# Producción / Compilación 
+dist
+dist-ssr
+*.local
+
+# Variables de entorno secretas
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos temporales del sistema y del editor
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
