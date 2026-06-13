@@ -20,10 +20,10 @@ Este repositorio contiene el codigo de la interfaz de usuario para la aplicacion
 Siga estos pasos para ejecutar el proyecto en un entorno local:
 
 1. Clone este repositorio:
-   git clone https://github.com/ORGANIZACION/repo-frontend.git
+   git clone https://github.com/CatalinDP/discord-clone-project-fe
 
 2. Acceda al directorio del proyecto:
-   cd repo-frontend
+   cd discord-clone-project-fe
 
 3. Instale las dependencias del sistema:
    npm install
