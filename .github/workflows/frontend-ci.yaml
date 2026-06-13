@@ -7,6 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Le decimos a GitHub que todo se ejecuta dentro de la carpeta real
+    defaults:
+      run:
+        working-directory: ./message-app-fe
 
     steps:
     - name: Descargar codigo
@@ -21,10 +25,6 @@ jobs:
       uses: pnpm/action-setup@v4
       with:
         version: 11
-
-    # ◄ NUEVO PASO DE DIAGNÓSTICO: Nos chivará qué hay en el servidor
-    - name: Ver estructura de carpetas real
-      run: ls -R
 
     - name: Instalar dependencias
       run: pnpm install
