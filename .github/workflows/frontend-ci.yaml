@@ -18,14 +18,13 @@ jobs:
         node-version: 20
 
     - name: Instalar pnpm
-      uses: pnpm/action-setup@v3
+      uses: pnpm/action-setup@v4 # ◄ Cambiado de v3 a v4
       with:
         version: 11
 
     - name: Instalar dependencias
       run: pnpm install
 
-    # ◄ NUEVO PASO: Comprobar el Linter y Formato
     - name: Validar Linter y Prettier
       run: pnpm run lint
 
