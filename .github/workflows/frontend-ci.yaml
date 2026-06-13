@@ -23,10 +23,10 @@ jobs:
         version: 11
 
     - name: Instalar dependencias
-      run: pnpm install --dir discord-clone-project-fe
+      run: pnpm install
 
     - name: Validar Linter y Prettier
-      run: pnpm --dir discord-clone-project-fe run lint
+      run: pnpm run lint
 
     - name: Verificar compilacion
-      run: pnpm --dir discord-clone-project-fe build
+      run: pnpm build
