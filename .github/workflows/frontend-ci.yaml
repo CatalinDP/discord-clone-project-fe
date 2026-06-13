@@ -15,10 +15,10 @@ jobs:
     - name: Configurar Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 20
+        node-version: 22
 
     - name: Instalar pnpm
-      uses: pnpm/action-setup@v4 # ◄ Cambiado de v3 a v4
+      uses: pnpm/action-setup@v4
       with:
         version: 11
 
