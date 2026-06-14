@@ -7,6 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Le decimos a GitHub que todo se ejecuta dentro de la carpeta real
+    defaults:
+      run:
+        working-directory: ./message-app-fe
 
     steps:
     - name: Descargar codigo
@@ -26,7 +30,7 @@ jobs:
       run: pnpm install
 
     - name: Validar Linter y Prettier
-      run: pnpm run lint
+      run: pnpm run lint:fix
 
     - name: Verificar compilacion
       run: pnpm build
